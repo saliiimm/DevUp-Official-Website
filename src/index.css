@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+:root {
+  font-family: 'Montserrat';
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --accent-color: #32ff6a;
+  --secondary-accent: #1e3a8a;
+  --primary-text: #070756;
+  --primary-color: #fcfdff;
+  --secondary-color: #dce3f7;
+  --tertiary-color: #dcf7e3;
+  --primary-dark: #333333;
+  --primary-grey: #656565;
+}
