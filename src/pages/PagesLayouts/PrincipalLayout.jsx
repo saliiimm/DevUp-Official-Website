@@ -9,7 +9,7 @@ const PrincipalLayout = () => {
       <div style={{ paddingTop: '70px' }}>
         <Outlet />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
