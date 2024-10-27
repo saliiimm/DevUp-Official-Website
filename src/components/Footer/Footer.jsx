@@ -1,5 +1,5 @@
 import './Footer.css';
-import DevUpLogo from '@/assets/devUp-logo-without-writing.png';
+import DevUpLogo from '@/assets/DevUp-logo-without-writing.png';
 import { FaLinkedin, FaInstagram, FaFacebookSquare } from 'react-icons/fa';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { GiPositionMarker } from 'react-icons/gi';
