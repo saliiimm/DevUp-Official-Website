@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import DevUpLogo from '@/assets/devUp-logo-without-writing.png';
+import DevUpLogo from '@/assets/DevUp-logo-without-writing.png';
 import { Link } from 'react-router-dom';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
