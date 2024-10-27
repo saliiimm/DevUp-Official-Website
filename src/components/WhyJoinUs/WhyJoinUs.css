@@ -229,10 +229,39 @@
     }
     
   }
+  @media (max-width: 1024px) {
+    .why-join-us-container {
+       
+        width: 70%;
+       
+    }
+
+    
+    .why-join-us-container {
+       
+        gap: 0; 
+       
+    }
+    .reason-title h2 {
+      
+        font-size: 1.7rem;
+       
+    }
+    .reason-icon {
+        font-size: 3rem;
+       
+    }
+    .reason p {
+        
+        font-size: 0.9rem;
+       
+    }
+   
+}
 
 
   .arrow {
-    pointer-events: none;
+    /* pointer-events: none; */
     overflow-x: hidden;
   }
   
@@ -244,4 +273,3 @@
     overflow-x: hidden;
   }
 
-  
