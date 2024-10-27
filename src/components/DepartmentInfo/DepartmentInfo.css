@@ -1,0 +1,112 @@
+.department-info-section {
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  z-index: 5;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-block: 30px;
+  padding-inline: 40px;
+  border-left: 10px solid var(--accent-color);
+}
+
+.department-info-section .text-part h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 67px;
+
+  color: #070756;
+}
+
+.department-info-section .text-part p {
+  max-width: 50%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 55px;
+
+  color: #434343;
+}
+
+.department-info-section img {
+  width: 300px;
+}
+
+@media screen and (max-width: 1024px) {
+  .department-info-section .text-part h2 {
+    font-size: 36px;
+    line-height: 67px;
+
+    color: #070756;
+  }
+
+  .department-info-section .text-part p {
+    max-width: 70%;
+
+    font-size: 20px;
+    line-height: 55px;
+  }
+
+  .department-info-section img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .department-info-section {
+    height: 300px;
+  }
+  .department-info-section .text-part h2 {
+    font-size: 26px;
+    line-height: 67px;
+
+    color: #070756;
+  }
+
+  .department-info-section .text-part p {
+    max-width: 90%;
+
+    font-size: 17px;
+    line-height: 40px;
+  }
+
+  .department-info-section img {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .department-info-section {
+    height: 300px;
+    flex-direction: column;
+    border-left: none;
+    align-items: center;
+  }
+  .department-info-section .text-part {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .department-info-section .text-part h2 {
+    font-size: 26px;
+    line-height: 67px;
+    border-bottom: 4px solid var(--accent-color);
+    text-align: center;
+    color: #070756;
+  }
+
+  .department-info-section .text-part p {
+    max-width: 90%;
+    text-align: center;
+    font-size: 17px;
+    line-height: 40px;
+  }
+
+  .department-info-section img {
+    display: none;
+  }
+}
