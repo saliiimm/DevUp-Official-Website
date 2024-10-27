@@ -19,7 +19,7 @@ const FAQ = () => {
             activeKey={activeKey}
             onChange={onCollapseChange}
             ghost
-            expandIconPosition="right"
+            expandIconPosition="end"
           >
             <Panel
               header="Do I need experience in tech or design to join?"

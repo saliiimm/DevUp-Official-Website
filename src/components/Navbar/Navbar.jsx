@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import './Navbar.css';
 import DevUpLogo from '@/assets/DevUp-logo-without-writing.png';
 import { Link } from 'react-router-dom';
@@ -6,13 +6,27 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleClickOutside = (e) => {
+    if (menuRef.current && !menuRef.current.contains(e.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
-    <nav>
+    <nav ref={menuRef}>
       <Link to="/">
         <img src={DevUpLogo} alt="DevUp Logo" />
       </Link>

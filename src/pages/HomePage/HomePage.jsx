@@ -7,14 +7,14 @@ import ContactUs from '@/components/ContactUs/ContactUs';
 
 const HomePage = () => {
   return (
-    <div>
+    <main>
       <HomeWelcome />
       <HomeDepartments />
       <AboutUsTextImage />
       <WhyJoinUs />
       <ContactUs />
       <FAQ />
-    </div>
+    </main>
   );
 };
 

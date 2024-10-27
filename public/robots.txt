@@ -1,0 +1,11 @@
+# Allow all bots to access the site
+User-agent: *
+Allow: /
+
+# Block specific sensitive folders if any (uncomment and specify paths as needed)
+# Disallow: /admin/
+# Disallow: /login/
+# Disallow: /private/
+
+# Specify the location of the sitemap
+Sitemap: https://www.devup-umbb.com/sitemap.xml

@@ -6,12 +6,12 @@ import { leadData } from '../../data/leaddata';
 
 const AboutPage = () => {
   return (
-    <div>
+    <main>
       <AboutUsTextImage />
       <Sliders data={leadData} title="Lead" />
       <VisionAndMission />
       <StillHaveAQuestion />
-    </div>
+    </main>
   );
 };
 
