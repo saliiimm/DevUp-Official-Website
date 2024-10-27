@@ -15,6 +15,7 @@
     "@mui/material": "^6.1.5",
     "antd": "^5.21.5",
     "devup-website": "file:",
+    "framer-motion": "^11.11.10",
     "install": "^0.13.0",
     "npm": "^10.9.0",
     "react": "^18.3.1",

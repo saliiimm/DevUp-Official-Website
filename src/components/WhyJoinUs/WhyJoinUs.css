@@ -24,7 +24,7 @@
 
 .why-join-us-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 120px; 
     position: relative;
@@ -159,6 +159,41 @@
         
         font-size: 1rem;
      
+    }
+    .reason-title .reason-image-container {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%); 
+       
+    }
+    .reason-title .reason-image-container img {
+        width: 40%;
+        height: 40%;
+        object-fit: cover;
+    }
+    .reason-icon {
+        font-size: 3rem;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .reason {
+        flex-basis: 50%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        max-width: 450px;
+        max-height: 350px;
+        
+        border-radius: 16px;
+        text-align: center;
+        margin: 0 2rem; 
+        
     }
 }
 @media(min-width:1500px){
