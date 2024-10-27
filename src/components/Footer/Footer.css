@@ -103,6 +103,9 @@ footer .part-bottom p {
 
   color: var(--primary-grey);
 }
+footer a {
+  color: black;
+}
 
 @media screen and (max-width: 1024px) {
   footer .part-top .text-parts {

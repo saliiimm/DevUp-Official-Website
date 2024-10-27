@@ -2,13 +2,13 @@ import AboutUsTextImage from '@/components/AboutUsTextImage/AboutUsTextImage';
 import VisionAndMission from '../../components/VisionAndMission/VisionAndMission';
 import Sliders from '../../components/Sliders/Sliders';
 import StillHaveAQuestion from '../../components/StillHaveAQuestion/StillHaveAQuestion';
-import { data } from '../../data/teamdata';
+import { leadData } from '../../data/leaddata';
 
 const AboutPage = () => {
   return (
     <div>
       <AboutUsTextImage />
-      <Sliders data={data} title="Lead" />
+      <Sliders data={leadData} title="Lead" />
       <VisionAndMission />
       <StillHaveAQuestion />
     </div>

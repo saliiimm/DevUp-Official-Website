@@ -5,7 +5,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 20px;
-  padding-block: 100px;
+  padding-block: 50px;
 }
 
 .sliders-section h2:first-child {
@@ -65,5 +65,8 @@
 @media screen and (max-width: 480px) {
   .sliders-section .slider-btn {
     display: none;
+  }
+  .sliders-section {
+    padding-block: 65px;
   }
 }
