@@ -6,51 +6,27 @@ import number1 from '../../assets/01.png';
 import number2 from '../../assets/02.png';
 import number3 from '../../assets/03.png';
 
-const useIsTablet = () => {
-    const [isTablet, setIsTablet] = useState(false);
+const useResponsive = () => {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [isTablet, setIsTablet] = useState(window.innerWidth >= 728 && window.innerWidth <= 992);
 
     const checkWidth = () => {
         const width = window.innerWidth;
-        // Define minimum and maximum width for tablets (adjust as needed)
-        const minTabletWidth = 728;
-        const maxTabletWidth = 992; // Example for common tablet size range
-        setIsTablet(width >= minTabletWidth && width <= maxTabletWidth);
+        setIsMobile(width <= 768);
+        setIsTablet(width >= 728 && width <= 992);
     };
 
     useEffect(() => {
-        checkWidth();
         window.addEventListener("resize", checkWidth);
-
         return () => window.removeEventListener("resize", checkWidth);
     }, []);
 
-    return isTablet;
-};
-
-const useIsMobile = () => {
-    const [isMobile, setIsMobile] = useState(false);
-
-    const checkWidth = () => {
-        const width = window.innerWidth;
-        // Define minimum and maximum width for tablets (adjust as needed)
-        const minMobileWidth = 0;
-        const maxMobileWidth = 500; // Example for common tablet size range
-        setIsMobile(width >= minMobileWidth && width <= maxMobileWidth);
-    };
-
-    useEffect(() => {
-        checkWidth();
-        window.addEventListener("resize", checkWidth);
-
-        return () => window.removeEventListener("resize", checkWidth);
-    }, []);
-
-    return isMobile;
+    return { isMobile, isTablet };
 };
 
 const WhyJoinUs = () => {
-    const isTabletDevice = useIsTablet();
-    const isMobileDevice = useIsMobile();
+    const { isMobile, isTablet } = useResponsive();
+
     const reasons = [
         {
             title: "Learning Opportunities",
@@ -80,37 +56,35 @@ const WhyJoinUs = () => {
 
     return (
         <div className="why-join-us">
-
-            {!isMobileDevice && !isTabletDevice && (
-                <Arrow
-                    className="arrow"
-                    from={{
-                        direction: DIRECTION.BOTTOM, // Change from TOP to BOTTOM
-                        node: () => document.getElementById("from1"),
-                        translation: [0, 0],
-                    }}
-                    to={{
-                        direction: DIRECTION.TOP, // Keep as TOP
-                        node: () => document.getElementById("from2"),
-                        translation: [0.3, -0.2],
-                    }}
-                />
-            )}
-
-            {!isMobileDevice && !isTabletDevice && (
-                <Arrow
-                    className="arrow"
-                    from={{
-                        direction: DIRECTION.BOTTOM,
-                        node: () => document.getElementById("from2"),
-                        translation: [-1, -0.20],
-                    }}
-                    to={{
-                        direction: DIRECTION.TOP,
-                        node: () => document.getElementById("from3"),
-                        translation: [0.5, -0.2],
-                    }}
-                />
+            {!isMobile && !isTablet && (
+                <>
+                    <Arrow
+                        className="arrow"
+                        from={{
+                            direction: DIRECTION.BOTTOM,
+                            node: () => document.getElementById("from1"),
+                            translation: [0, 0],
+                        }}
+                        to={{
+                            direction: DIRECTION.TOP,
+                            node: () => document.getElementById("from2"),
+                            translation: [0.3, -0.2],
+                        }}
+                    />
+                    <Arrow
+                        className="arrow"
+                        from={{
+                            direction: DIRECTION.BOTTOM,
+                            node: () => document.getElementById("from2"),
+                            translation: [-1, -0.20],
+                        }}
+                        to={{
+                            direction: DIRECTION.TOP,
+                            node: () => document.getElementById("from3"),
+                            translation: [0.5, -0.2],
+                        }}
+                    />
+                </>
             )}
 
             <h1>Why Join Us</h1>
@@ -118,7 +92,7 @@ const WhyJoinUs = () => {
             <main className="why-join-us-containers">
                 {reasons.map((reason, index) => (
                     <div className="why-join-us-container" key={index}>
-                        {index % 2 === 0 ? (
+                        {isMobile ? (
                             <>
                                 <div className="reason-title">
                                     <div className="reason-image-container">
@@ -134,17 +108,35 @@ const WhyJoinUs = () => {
                             </>
                         ) : (
                             <>
-                                <div className={`reason ${index % 2 === 0 ? 'even' : 'odd'}`}>
-                                    <div className="reason-icon">{reason.icon}</div>
-                                    <p>{reason.description}</p>
-                                </div>
-                                <div className="reason-title">
-                                    <div className="reason-image-container">
-                                        <img src={reason.image} alt={reason.title} />
-                                        <span id={reason.span}></span>
-                                    </div>
-                                    <h2>{reason.title}</h2>
-                                </div>
+                                {index % 2 === 0 ? (
+                                    <>
+                                        <div className="reason-title">
+                                            <div className="reason-image-container">
+                                                <img src={reason.image} alt={reason.title} />
+                                                <span id={reason.span}></span>
+                                            </div>
+                                            <h2>{reason.title}</h2>
+                                        </div>
+                                        <div className={`reason ${index % 2 === 0 ? 'even' : 'odd'}`}>
+                                            <div className="reason-icon">{reason.icon}</div>
+                                            <p>{reason.description}</p>
+                                        </div>
+                                    </>
+                                ) : (
+                                    <>
+                                        <div className={`reason ${index % 2 === 0 ? 'even' : 'odd'}`}>
+                                            <div className="reason-icon">{reason.icon}</div>
+                                            <p>{reason.description}</p>
+                                        </div>
+                                        <div className="reason-title">
+                                            <div className="reason-image-container">
+                                                <img src={reason.image} alt={reason.title} />
+                                                <span id={reason.span}></span>
+                                            </div>
+                                            <h2>{reason.title}</h2>
+                                        </div>
+                                    </>
+                                )}
                             </>
                         )}
                     </div>
