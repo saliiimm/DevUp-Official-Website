@@ -152,4 +152,31 @@ footer a {
   footer .part-top .text-parts {
     flex-direction: row-reverse;
   }
+  footer .part-top .text-parts {
+    gap: 12px;
+  }
+  footer .part-top .text-parts p,
+  footer .part-top .text-parts li {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  footer .part-top .text-parts {
+    gap: 10px;
+  }
+  footer .part-top .text-parts p,
+  footer .part-top .text-parts li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  footer .part-top .text-parts {
+    gap: 6px;
+  }
+  footer .part-top .text-parts p,
+  footer .part-top .text-parts li {
+    font-size: 12px;
+  }
 }
