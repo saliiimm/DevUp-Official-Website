@@ -6,7 +6,7 @@ import AboutPage from './pages/AboutPage/AboutPage';
 import DepartmentPage from './pages/DepartmentPage/DepartmentPage';
 import EventsPage from './pages/EventsPage/EventsPage';
 import Error404 from './pages/Error404/Error404';
-
+import FAQ from './components/FAQ/FAQ';
 import ContactUs from './components/ContactUs/ContactUs';
 function App() {
   return (
