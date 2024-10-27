@@ -1,0 +1,87 @@
+.faq-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.faq-content h1 {
+    text-align: center;
+    color: var(--primary-text);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.custom-collapse-header {
+    margin-bottom: 1rem !important;
+    border-radius: 6px !important;
+    background-color: white !important;
+    box-shadow: 6px 9px 33px -6px #0F1A3A2B;
+
+}
+
+.custom-collapse-header .ant-collapse-header {
+    padding: 1rem 1.5rem !important;
+    font-weight: 500 !important;
+    font-size: 1.5rem !important;
+}
+
+.custom-collapse-header.active {
+    background-color: var(--secondary-accent) !important; 
+}
+
+.custom-collapse-header.active .ant-collapse-header {
+    color: var(--secondary-color);
+   
+}
+
+.custom-collapse-content {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--secondary-color); 
+    
+}
+
+
+@media (max-width:768px){
+    .faq-container {
+        padding: 1rem;
+    }
+    .faq-content h1 {
+        font-size: 1.5rem;
+    }
+    .custom-collapse-header .ant-collapse-header {
+        font-size: 1.2rem !important;
+    }
+    .custom-collapse-content {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:425px){
+    .faq-container {
+        padding: 1rem;
+    }
+    .faq-content h1 {
+        font-size: 1.3rem;
+    }
+    .custom-collapse-header .ant-collapse-header {
+        font-size: 1rem !important;
+    }
+    .custom-collapse-content {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width:1440px){
+    .faq-content h1 {
+        font-size: 2.6rem;
+    }
+    .custom-collapse-header .ant-collapse-header {
+        font-size: 1.7rem !important;
+    }
+    .custom-collapse-content {
+        font-size: 1.2rem;
+    }
+}

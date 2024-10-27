@@ -10,6 +10,7 @@ import StillHaveAQuestion from '@/components/StillHaveAQuestion/StillHaveAQuesti
 
 const HomePage = () => {
   return <div>
+
         <HomeWelcome/>
         <HomeDepartments/>
         <AboutUsTextImage/>
