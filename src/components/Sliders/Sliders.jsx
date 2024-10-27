@@ -9,14 +9,14 @@ import { SlArrowRight, SlArrowLeft } from 'react-icons/sl';
 import { Card } from '../SlidersCard/Card';
 import './Sliders.css';
 
-export default function ResponsiveCarousel({ data }) {
+export default function ResponsiveCarousel({ data, title }) {
   const ref = React.useRef();
   return (
-    <div
+    <section
       style={{ width: '100%', position: 'relative' }}
       className="sliders-section"
     >
-      <h2>Leaders</h2>
+      {title && <h2>{title}</h2>}
       <ResponsiveContainer
         carouselRef={ref}
         render={(parentWidth, carouselRef) => {
@@ -79,6 +79,6 @@ export default function ResponsiveCarousel({ data }) {
           <SlArrowRight color="black" size={20} />
         </Fab>
       </>
-    </div>
+    </section>
   );
 }
