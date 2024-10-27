@@ -7,7 +7,7 @@ export const leadData = [
   },
   {
     cover:
-      'https://cdn.discordapp.com/avatars/697587475664601180/fee8a2382db99309952da0adac96574a.png?size=80',
+      'https://res.cloudinary.com/dumhhj9qh/image/upload/v1730065443/devup/co-lead.jpg',
     title: 'Co Lead',
     fullname: 'Hafsaoui Abderrahim',
   },

@@ -34,13 +34,14 @@
 .sliders-section .slider-card img {
   width: 150px;
   height: 150px;
+  object-fit: cover;
   border-radius: 50%;
 }
 
 .sliders-section .slider-card h3 {
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 48px;
   color: #000000;
 }

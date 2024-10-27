@@ -1,9 +1,18 @@
 import DepartmentHome from '../../components/DepartmentHome/DepartmentHome';
 import DepartmentInfo from '../../components/DepartmentInfo/DepartmentInfo';
 import WebDepLogo from '../../assets/web-dep-logo.png';
+import DesignDepLogo from '../../assets/design-dep-logo.png';
+import marketingDepLogo from '../../assets/marketong-dep-logo.png';
+import hrDepLogo from '../../assets/human-resource-logo.png';
+import oandoLogo from '../../assets/oando-logo.png';
+import videographyDepLogo from '../../assets/videography-dep-logo.png';
 import Sliders from '../../components/Sliders/Sliders';
-import { data } from '../../data/teamdata';
 import StillHaveAQuestion from '../../components/StillHaveAQuestion/StillHaveAQuestion';
+import { webTeamData } from '../../data/webteamdata';
+import { designTeamData } from '../../data/designteamdata';
+import { marketingTeamData } from '../../data/marketingteamdata';
+import { hrTeamData } from '../../data/hrteamdata';
+import { oandoTeamData } from '../../data/ooteamdata';
 const DepartmentPage = () => {
   return (
     <main>
@@ -16,42 +25,42 @@ const DepartmentPage = () => {
         image={WebDepLogo}
         borderColor="#32ff6a"
       />
-      <Sliders data={data} />
+      <Sliders data={webTeamData} />
       <DepartmentInfo
         departmentName="Design Department"
         paragraph=" Craft intuitive and engaging Grapgic design with Figma, Adobe Illustrator, and Photoshop. Join us to transform ideas into visual experiences."
-        image={WebDepLogo}
+        image={DesignDepLogo}
         borderColor="#070756"
       />
-      <Sliders data={data} />
+      <Sliders data={designTeamData} />
       <DepartmentInfo
         departmentName="Multimedia Department"
         paragraph="Create videos and multimedia content using tools like Adobe Premiere and After Effects. Work on promotional content and event coverage"
-        image={WebDepLogo}
+        image={videographyDepLogo}
         borderColor="#32ff6a"
       />
-      <Sliders data={data} />
+      <Sliders data={marketingTeamData} />
       <DepartmentInfo
         departmentName="Marketing Department"
         paragraph="Promote DevUp through social media, branding, and campaigns. Gain hands-on experience in digital marketing and content creation."
-        image={WebDepLogo}
+        image={marketingDepLogo}
         borderColor="#070756"
       />
-      <Sliders data={data} />
+      <Sliders data={marketingTeamData} />
       <DepartmentInfo
         departmentName="Outreach & Opeartion Department"
         paragraph="The Outreach & Operations Department manages external partnerships, event coordination, and ensures smooth execution of all club activities."
-        image={WebDepLogo}
+        image={oandoLogo}
         borderColor="#32ff6a"
       />
-      <Sliders data={data} />
+      <Sliders data={oandoTeamData} />
       <DepartmentInfo
         departmentName="Human Resources Department"
         paragraph="The H&R Department handles recruitment, team coordination, and fosters a positive work environment."
-        image={WebDepLogo}
+        image={hrDepLogo}
         borderColor="#070756"
       />
-      <Sliders data={data} />
+      <Sliders data={hrTeamData} />
       <StillHaveAQuestion />
     </main>
   );
