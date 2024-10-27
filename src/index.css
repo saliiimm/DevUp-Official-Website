@@ -15,6 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   --accent-color: #32ff6a;
+  --light-accent-color: #E6FAEB;
   --secondary-accent: #1e3a8a;
   --primary-text: #070756;
   --primary-color: #fcfdff;
@@ -22,4 +23,6 @@
   --tertiary-color: #dcf7e3;
   --primary-dark: #333333;
   --primary-grey: #656565;
+
+  --font-primary: white;
 }

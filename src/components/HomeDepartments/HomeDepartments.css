@@ -1,0 +1,118 @@
+.home-departments {
+    position: relative;
+
+    padding-top: 400px !important;
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding-block: 50px;
+}
+
+.home-departments h2 {
+    margin: 20px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 120%;
+    color: var(--secondary-accent);
+  }
+
+#departments-container{
+    width: 65%;
+    margin: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 50px;
+}
+
+#first-department{
+    grid-row: span 2;
+}
+
+@media screen and (max-width: 768px) {
+    .home-departments {
+        position: relative;
+    
+        padding-top: 100px !important;
+        width: 100%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        padding-block: 50px;
+    }
+
+    .home-departments h2 {
+        margin: 20px;
+    
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 120%;
+        color: var(--secondary-accent);
+      }
+
+    #departments-container{
+        width: 80%;
+        margin: 20px;
+    
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 50px;
+    }
+
+    #first-department{
+        grid-row:  0;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .home-departments {
+        position: relative;
+    
+        padding-top: 1px !important;
+        width: 100%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        padding-block: 50px;
+    }
+
+    .home-departments h2 {
+        margin: 20px;
+    
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 120%;
+        color: var(--secondary-accent);
+      }
+
+    #departments-container{
+        width: 80%;
+        margin: 20px;
+    
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 50px;
+    }
+
+    
+}
