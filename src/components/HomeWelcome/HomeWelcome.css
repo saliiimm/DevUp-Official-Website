@@ -122,3 +122,65 @@
         color: var(--font-primary);
     }
   }
+
+@media screen and (max-width: 400px) { 
+
+    .home-welcome {
+        position: relative;
+
+        padding: 0px 40px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 25px;
+        padding-block: 50px;
+    }
+
+    .home-welcome h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        align-self: start;
+
+        color: var(--font-primary);
+        z-index: 5;
+    }
+
+    #welcome{
+        margin-top: 13px;
+    }
+
+    #club{
+        font-size: 23px;
+    }
+
+    #club span{
+        color: var(--accent-color);
+    }
+
+    #club-desc{
+        font-size: 10px;
+    }
+
+
+    .home-welcome button {
+        width: 125px;
+        height: 40px;
+        border: none;
+        background: var(--accent-color);
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: bolder;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    .home-welcome button:hover {
+        background-color: var(--accent-hover);
+        color: var(--font-primary);
+    }
+}
