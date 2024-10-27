@@ -126,18 +126,42 @@
     color: var(--primary-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
     .why-join-us-container {
         flex-direction: column;
-        gap: 60px;
+        gap: 1px;
+        padding: 0;
     }
 
     .reason {
         margin: 0;
         max-width: 100%;
     }
+    .why-join-us-containers{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .reason-title{
+        width: 100%;
+    }
+    .why-join-us h1 {
+       
+        font-size: 1.7rem;
+       
+    }
+    .reason-title h2 {
+        
+        font-size: 1.5rem;
+        
+    }
+    .reason p {
+        
+        font-size: 1rem;
+     
+    }
 }
-@media(min-width:1440px){
+@media(min-width:1500px){
     .why-join-us h1 {
        
         font-size: 2.5rem;
