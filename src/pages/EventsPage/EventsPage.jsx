@@ -5,7 +5,6 @@ import { MdEvent } from "react-icons/md";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import image from '../../assets/event1.jpg';
 import image2 from '../../assets/event2.jpg';
-
 const EventsPage = () => {
   const [isMobile, setIsMobile] = useState(false);
 
