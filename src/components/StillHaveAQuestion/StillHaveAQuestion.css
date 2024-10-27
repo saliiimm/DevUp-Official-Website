@@ -1,0 +1,68 @@
+.still-have-a-question {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  padding-block: 50px;
+}
+
+.still-have-a-question h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 120%;
+  color: var(--secondary-accent);
+  z-index: 5;
+  text-align: center;
+}
+
+.still-have-a-question > p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  color: #070756;
+}
+
+.still-have-a-question .socials {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 180px;
+}
+
+.still-have-a-question .socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  color: black;
+}
+
+.still-have-a-question .socials a p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .still-have-a-question .socials {
+    gap: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .still-have-a-question .socials {
+    gap: 30px;
+  }
+  .still-have-a-question .socials a p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

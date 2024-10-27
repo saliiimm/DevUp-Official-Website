@@ -1,0 +1,121 @@
+.vision-and-mission-section .vision-mission-card {
+  width: 40%;
+  height: 672px;
+  padding: 30px;
+  background: linear-gradient(44.93deg, #dce3f7 -38.35%, #1e3a8a 82.46%);
+  border-radius: 32px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.vision-and-mission-section .vision-mission-card .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.vision-and-mission-section .vision-mission-card .top h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 120%;
+  color: #070756;
+  text-align: start;
+}
+.vision-and-mission-section .vision-mission-card .top h2 span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+
+  line-height: 108px;
+  letter-spacing: 0.09em;
+  color: #ffffff;
+}
+
+.vision-and-mission-section .vision-mission-card .top img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.vision-and-mission-section .vision-mission-card p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 43px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  .vision-and-mission-section .vision-mission-card {
+    width: 45%;
+  }
+  .vision-and-mission-section .vision-mission-card .top h2 {
+    font-size: 50px;
+    line-height: 80px;
+  }
+  .vision-and-mission-section .vision-mission-card .top h2 span {
+    font-size: 60px;
+    line-height: 88px;
+  }
+  .vision-and-mission-section .vision-mission-card .top img {
+    width: 100px;
+  }
+  .vision-and-mission-section .vision-mission-card p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vision-and-mission-section .vision-mission-card {
+    width: 45%;
+    height: 472px;
+    padding: 30px;
+  }
+  .vision-and-mission-section .vision-mission-card .top h2 {
+    font-size: 40px;
+    line-height: 70px;
+  }
+  .vision-and-mission-section .vision-mission-card .top h2 span {
+    font-size: 50px;
+    line-height: 78px;
+  }
+  .vision-and-mission-section .vision-mission-card .top img {
+    width: 90px;
+  }
+  .vision-and-mission-section .vision-mission-card p {
+    font-size: 15px;
+    line-height: 33px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .vision-and-mission-section .vision-mission-card {
+    width: 90%;
+    height: 472px;
+    padding: 30px;
+  }
+  .vision-and-mission-section .vision-mission-card p {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .vision-and-mission-section .vision-mission-card .top img {
+    width: 60px;
+  }
+  .vision-and-mission-section .vision-mission-card .top h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .vision-and-mission-section .vision-mission-card .top h2 span {
+    font-size: 40px;
+    line-height: 58px;
+  }
+  .vision-and-mission-section .vision-mission-card p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
