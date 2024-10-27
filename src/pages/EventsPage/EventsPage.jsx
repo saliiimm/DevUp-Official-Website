@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './EventsPage.css';
-import { MdLocationPin } from "react-icons/md";
-import { MdEvent } from "react-icons/md";
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
+import { MdLocationPin } from 'react-icons/md';
+import { MdEvent } from 'react-icons/md';
+import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 import image from '../../assets/event1.jpg';
 import image2 from '../../assets/event2.jpg';
+import image3 from '../../assets/event3.jpg';
 const EventsPage = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -14,9 +15,9 @@ const EventsPage = () => {
 
   useEffect(() => {
     checkWidth();
-    window.addEventListener("resize", checkWidth);
+    window.addEventListener('resize', checkWidth);
 
-    return () => window.removeEventListener("resize", checkWidth);
+    return () => window.removeEventListener('resize', checkWidth);
   }, []);
 
   useEffect(() => {
@@ -26,56 +27,58 @@ const EventsPage = () => {
   const events = [
     {
       image: image2,
-      title: "Event 1",
+      title: 'Event 1',
       span: (
         <>
-          <MdLocationPin /> New York City &nbsp;&nbsp;
+          <MdLocationPin /> Bloc 4,INIM,Boumerdes &nbsp;&nbsp;
           <MdEvent /> March 12, 2021, 10:00 AM
         </>
       ),
-      description: "The Open Day event is designed to introduce new and prospective members to the Nvidia Developers Group. This is a great opportunity for students to learn about the club, explore its various departments (Web Development, Design, Marketing, Multimedia, and H&R)",
+      description:
+        'Our club hosted an exciting DevFest in Boumerdes, filled with tech talks, hands-on workshops, and networking that brought together passionate developers and innovators.',
       button: (
         <>
           Attend &nbsp;&nbsp; <FaRegArrowAltCircleRight />
         </>
       ),
-      circlePosition: "25%",
+      circlePosition: '25%',
     },
     {
       image: image,
-      title: "Event 1",
+      title: 'Event 1',
       span: (
         <>
-          <MdLocationPin /> New York City &nbsp;&nbsp;
+          <MdLocationPin /> Bloc 4,INIM,Boumerdes &nbsp;&nbsp;
           <MdEvent /> March 12, 2021, 10:00 AM
         </>
       ),
-      description: "The Open Day event is designed to introduce new and prospective members to the Nvidia Developers Group. This is a great opportunity for students to learn about the club, explore its various departments (Web Development, Design, Marketing, Multimedia, and H&R)",
+      description:
+        "On International Women's Day, we celebrated by hosting workshops led by inspiring women, empowering participants to drive change and shape the future.",
       button: (
         <>
           Attend &nbsp;&nbsp; <FaRegArrowAltCircleRight />
         </>
       ),
-      circlePosition: "25%",
+      circlePosition: '25%',
     },
     {
-      image: image2,
-      title: "Event 2",
+      image: image3,
+      title: 'Event 2',
       span: (
         <>
-          <MdLocationPin /> New York City &nbsp;&nbsp;
+          <MdLocationPin /> Bloc 4,INIM,Boumerdes &nbsp;&nbsp;
           <MdEvent /> March 12, 2021, 10:00 AM
         </>
       ),
-      description: "Another exciting event for the community. Don't miss it!",
+      description:
+        'GamerJam offered a dynamic event where participants explored game development through workshops and mentorship, diving into design, coding, and the art of game creation.',
       button: (
         <>
           Attend &nbsp;&nbsp; <FaRegArrowAltCircleRight />
         </>
       ),
-      circlePosition: "25%",
+      circlePosition: '25%',
     },
-    // Add more events as needed...
   ];
 
   return (
@@ -96,7 +99,11 @@ const EventsPage = () => {
                 <p>{event.description}</p>
                 <button className="event-button">{event.button}</button>
                 <div className="event-image-container">
-                  <img src={event.image} alt={event.title} className="event-image" />
+                  <img
+                    src={event.image}
+                    alt={event.title}
+                    className="event-image"
+                  />
                 </div>
               </div>
             ) : (
@@ -110,13 +117,21 @@ const EventsPage = () => {
                       <button className="event-button">{event.button}</button>
                     </div>
                     <div className="event-image-container">
-                      <img src={event.image} alt={event.title} className="event-image" />
+                      <img
+                        src={event.image}
+                        alt={event.title}
+                        className="event-image"
+                      />
                     </div>
                   </>
                 ) : (
                   <>
                     <div className="event-image-container">
-                      <img src={event.image} alt={event.title} className="event-image" />
+                      <img
+                        src={event.image}
+                        alt={event.title}
+                        className="event-image"
+                      />
                     </div>
                     <div className="event-description">
                       <h2>{event.title}</h2>
