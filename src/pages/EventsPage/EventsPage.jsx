@@ -27,7 +27,7 @@ const EventsPage = () => {
   const events = [
     {
       image: image2,
-      title: 'Event 1',
+      title: 'DevFest',
       span: (
         <>
           <MdLocationPin /> Bloc 4,INIM,Boumerdes &nbsp;&nbsp;
@@ -45,7 +45,7 @@ const EventsPage = () => {
     },
     {
       image: image,
-      title: 'Event 1',
+      title: 'Iwd: impact the future',
       span: (
         <>
           <MdLocationPin /> Bloc 4,INIM,Boumerdes &nbsp;&nbsp;
@@ -63,7 +63,7 @@ const EventsPage = () => {
     },
     {
       image: image3,
-      title: 'Event 2',
+      title: 'GameJam',
       span: (
         <>
           <MdLocationPin /> Bloc 4,INIM,Boumerdes &nbsp;&nbsp;
