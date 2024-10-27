@@ -1,0 +1,32 @@
+.vision-and-mission-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-block: 50px;
+}
+.vision-and-mission-section img:first-child {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .vision-and-mission-section img:first-child {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .vision-and-mission-section img:first-child {
+    width: 50%;
+  }
+  .vision-and-mission-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+}

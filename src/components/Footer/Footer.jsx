@@ -1,4 +1,3 @@
-import React from 'react';
 import './Footer.css';
 import DevUpLogo from '@/assets/devUp-logo-without-writing.png';
 import { FaLinkedin, FaInstagram, FaFacebookSquare } from 'react-icons/fa';

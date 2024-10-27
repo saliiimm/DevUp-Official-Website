@@ -1,6 +1,4 @@
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   background-color: var(--secondary-color);
   padding-inline: 15%;
@@ -104,6 +102,15 @@ footer .part-bottom p {
   letter-spacing: -0.01em;
 
   color: var(--primary-grey);
+}
+
+@media screen and (max-width: 1024px) {
+  footer .part-top .text-parts {
+    gap: 30px;
+  }
+  footer {
+    padding-inline: 5%;
+  }
 }
 
 @media screen and (max-width: 768px) {
