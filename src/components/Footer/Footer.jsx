@@ -97,7 +97,7 @@ const Footer = () => {
           <a href="https://www.instagram.com/devup.umbb/">
             <FaInstagram size={25} className="icon" />
           </a>
-          <a href="https://www.linkedin.com/company/gdscumbb/posts/?feedView=all">
+          <a href="www.linkedin.com/company/devupumbb/">
             <FaLinkedin size={25} className="icon" />
           </a>
           <a href="https://www.facebook.com/gdscumbb">

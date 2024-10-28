@@ -15,7 +15,7 @@ const StillHaveAQuestion = () => {
           <FaFacebook color="#0866FF" size={50} />
           <p>Facebook</p>
         </a>
-        <a href="https://www.linkedin.com/company/gdscumbb/posts/?feedView=all">
+        <a href="www.linkedin.com/company/devupumbb/">
           <FaLinkedin color="#0A66C2" size={50} />
           <p>LinkedIn</p>
         </a>
