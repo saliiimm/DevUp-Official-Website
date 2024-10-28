@@ -26,3 +26,7 @@
 
   --font-primary: white;
 }
+
+html {
+  scroll-behavior: smooth;
+}
