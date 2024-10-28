@@ -12,6 +12,11 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleClick = () => {
+    // Navigate to the specified URL
+    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLScOgLftkeAqi2dnEi_twzDCD7e6ex_Hctc5PJzjtf_DXJbYdQ/viewform?usp=sharing';
+  };
+
   const handleClickOutside = (e) => {
     if (menuRef.current && !menuRef.current.contains(e.target)) {
       setIsOpen(false);
@@ -53,7 +58,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <button onClick={toggleMenu}>Join Us</button>
+          <button onClick={handleClick}>Join Us</button>
         </li>
       </ul>
 

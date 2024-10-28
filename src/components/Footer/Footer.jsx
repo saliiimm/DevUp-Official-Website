@@ -7,13 +7,17 @@ import { FaPhoneAlt } from 'react-icons/fa';
 import { IoMail } from 'react-icons/io5';
 
 const Footer = () => {
+  const handleClick = () => {
+    // Navigate to the specified URL
+    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLScOgLftkeAqi2dnEi_twzDCD7e6ex_Hctc5PJzjtf_DXJbYdQ/viewform?usp=sharing';
+  };
   return (
     <footer>
       <div className="part-top">
         <div className="logo-button">
           <img src={DevUpLogo} alt="DevUp Logo" />
           <span>
-            <p>Join Us</p>
+            <p onClick={handleClick}>Join Us</p>
             <BsArrowRightCircle />
           </span>
         </div>
@@ -52,7 +56,7 @@ const Footer = () => {
             <li>About us</li>
             <li>Events</li>
             <li>Departments</li>
-            <li>Join Us</li>
+            <li onClick={handleClick}>Join Us</li>
           </ul>
 
           <div className="contact">

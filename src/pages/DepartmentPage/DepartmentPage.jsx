@@ -18,7 +18,7 @@ const DepartmentPage = () => {
     <main>
       <DepartmentHome />
       <DepartmentInfo
-        departmentName="Web Department"
+        departmentName="Dev Department"
         paragraph=" Build websites and applications using React, JavaScript, and other
           modern tools. Perfect for anyone interested in coding and web
           technologies."
