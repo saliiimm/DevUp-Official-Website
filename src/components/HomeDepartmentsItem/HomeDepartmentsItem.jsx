@@ -1,4 +1,5 @@
 import './HomeDepartmentsItem.css';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 
 const HomeDepartmentsItem = ({ image, title, description, link }) => {
@@ -8,7 +9,7 @@ const HomeDepartmentsItem = ({ image, title, description, link }) => {
             <div>
                 <h3>{title}</h3>
                 <p>{description}</p>
-                <a href={link}>Learn more</a>
+                <Link to={link}>Learn more</Link>
             </div>
         </div>
     );
