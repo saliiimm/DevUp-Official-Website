@@ -13,7 +13,20 @@ import { designTeamData } from '../../data/designteamdata';
 import { marketingTeamData } from '../../data/marketingteamdata';
 import { hrTeamData } from '../../data/hrteamdata';
 import { oandoTeamData } from '../../data/ooteamdata';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 const DepartmentPage = () => {
+
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.getElementById(hash.substring(1)); // Get the element by ID (remove #)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' }); // Scroll smoothly to the element
+      }
+    }
+  }, [hash]);
   return (
     <main>
       <DepartmentHome />
